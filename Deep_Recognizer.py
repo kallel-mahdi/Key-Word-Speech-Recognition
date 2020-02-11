@@ -8,9 +8,8 @@ import random
 import numpy as np
 from translate import translator
 from speaker_rec import who_speaks
-from client import ClientPython
 
-client = ClientPython(1035)
+
 
 audio = pyaudio.PyAudio()
 
@@ -173,7 +172,6 @@ class ConsumerThread(Thread):
                 if marvin==True:
                     print("executing",word)
                     print(len(word))
-                    client.send(word)
                     marvin=False
                 else:
                     print("say marvin before")
