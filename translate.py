@@ -4,6 +4,7 @@ import time
 import tensorflow as tf
 import numpy as np
 import pickle
+from tensorflow.python.keras import backend as k
 
 
 class translator:

@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn import preprocessing
-import python_speech_features as mfcc
+from MFCC import mfcc
 
 def calculate_delta(array):
     """Calculate and returns the delta of given feature vector matrix"""
@@ -29,7 +29,7 @@ def extract_features(audio,rate):
     """extract 20 dim mfcc features from an audio, performs CMS and combines 
     delta to make it 40 dim feature vector"""    
     
-    mfcc_feature = mfcc.mfcc(audio,rate, 0.025, 0.01,20,nfft = 1200, appendEnergy = True)    
+    mfcc_feature = mfcc(audio,rate, 0.025, 0.01,20,nfft = 1200, appendEnergy = True)    
     mfcc_feature = preprocessing.scale(mfcc_feature)
     delta = calculate_delta(mfcc_feature)
     combined = np.hstack((mfcc_feature,delta)) 

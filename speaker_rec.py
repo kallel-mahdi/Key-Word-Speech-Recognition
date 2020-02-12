@@ -9,7 +9,7 @@ import warnings
 source = "development_set/"
 modelpath = "speaker_models/"
 test_file = "development_set_test.txt"
-file_paths = open(test_file, 'r')
+#file_paths = open(test_file, 'r')
 
 gmm_files = [os.path.join(modelpath, fname) for fname in
              os.listdir(modelpath)]
