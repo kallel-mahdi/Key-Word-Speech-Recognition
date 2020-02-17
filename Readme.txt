@@ -1,3 +1,4 @@
+
 How to install:
 
 create new environment :
@@ -15,3 +16,7 @@ conda install --file requirements.txt
 Run :
 
 python3 deep_recognizer.py
+
+
+
+Check Python Notebooks folder for explanatory notebooks of the program.
