@@ -1,3 +1,6 @@
+This project was realised as part of the "PACT" group project for our sophomore year at Telecom Paris.
+
+Along with with Mounib Abouanass, we had to implement the key word spotting for  a smart virtual assistant.
 
 How to install:
 
